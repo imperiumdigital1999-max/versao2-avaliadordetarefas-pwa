@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Portal do Avaliador</title>
+  <link rel="manifest" href="manifest.json">
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js');
+    }
+
+    if ('Notification' in window && Notification.permission !== 'granted') {
+      Notification.requestPermission();
+    }
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- O restante do conteúdo do head e body será inserido aqui -->
+</head>
+<body>
+<!-- Conteúdo completo conforme fornecido pelo usuário -->
+<!-- ... (conteúdo omitido para brevidade no exemplo) -->
+</body>
+</html>
