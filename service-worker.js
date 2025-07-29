@@ -1,7 +1,7 @@
 self.addEventListener('install', e => {
   e.waitUntil(
     caches.open('avaliador-cache').then(cache => {
-      return cache.addAll(['/', '/index.html']);
+      return cache.addAll(['index.html']);
     })
   );
 });
